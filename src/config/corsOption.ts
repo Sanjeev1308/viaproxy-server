@@ -1,7 +1,7 @@
 import cors from 'cors'
 const allowedOrigins: string[] =
     [
-        "http://localhost:3000/",
+        "*",
     ];
 
 export const corsOptions: cors.CorsOptions = {
