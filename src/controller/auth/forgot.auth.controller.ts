@@ -36,7 +36,7 @@ export const forgotPassword = asyncHandler(async (req: Request<object, object, f
 
     // Emit event for sending password reset email or SMS
     const link = `https://localhost:3000/auth/reset?passwordResetCode=${code}&email=${email}`;
-    EventEmitterInstance.emit('forgot', { code, name: user.name, email: user.email, link });
+    EventEmitterInstance.emit('forgot', { code, name: user.firstName, email: user.email, link });
 
     res.status(201).json({ message: "If a user with that email is registered, you will receive a password reset email or OTP code via SMS", email, success: true });
 });

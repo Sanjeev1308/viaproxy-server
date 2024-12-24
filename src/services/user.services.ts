@@ -42,6 +42,7 @@ export async function createUser(userData: Partial<IUser>) {
         console.log("result", result)
         return { data: result, success: true };
     } catch (error) {
+        console.log('error', error)
         return { data: null, success: false, error };
     }
 }

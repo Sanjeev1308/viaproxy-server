@@ -12,7 +12,10 @@ const userSchema = new Schema<IUser>({
   email: {
     type: String,
   },
-  name: {
+  firstName: {
+    type: String,
+  },
+  lastName: {
     type: String,
   },
   isActive: {

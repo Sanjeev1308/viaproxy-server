@@ -3,9 +3,10 @@ import { IRole } from './roles.interface';
 
 export interface IUser extends Document {
   password: string;
-  phoneNumber: string;
+  phoneNumber?: string;
   email: string;
-  name: string;
+  firstName: string;
+  lastName: string;
   isActive: boolean;
   OTPCode?: string;
   OTPCodeExpires?: number;
