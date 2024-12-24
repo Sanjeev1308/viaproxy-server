@@ -8,11 +8,11 @@
     ],
     "routes": [
       {
-        "src": "/(.*)",
+        "src": "(.*)",
         "dest": "dist/index.js",
         "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
         "headers": {
-            "Access-Control-Allow-Credentials": "true"
+            "Access-Control-Allow-Origin": "*"
         }
       }
     ]
